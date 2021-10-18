@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{margin: 0px auto;width: 1600px;max-width: 90%}
+
+.flex {display: flex;}
+.flex-row{flex-direction: row;}
+.flex-row.reverse {flex-direction: row-reverse;}
+.flex-col{flex-direction: column;}
+.flex-col.reverse {flex-direction: column-reverse;}
+.flex-1 {flex: 1;}
+.flex-nowrap{flex-wrap: nowrap;}
+.flex-wrap{flex-wrap: wrap;}
+.justify-start{justify-content: flex-start;}
+.justify-end{justify-content: flex-end;}
+.justify-between{justify-content: space-between;}
+.justify-center{justify-content: center;}
+.justify-evenly{justify-content: space-evenly;}
+
+.align-i-center {align-items: center;}
+.align-i-start {align-items: flex-start;}
+.align-i-end {align-items: flex-end;}
+
+.align-s-center {align-self: center;}
+.align-s-start {align-self: flex-start;}
+.align-s-end {align-self: flex-end;}
+
+.flex-row-2 > * {flex-basis: 48%;}
+.flex-row-3 > * {flex-basis: 31%;}
+
+
+@media only screen and (max-width: 1023px) {
+    .container {width: 90%;max-width: 90%;}
+    .flex-row.responsive {flex-direction: column;}
+    .flex-row.responsive.responsive-reverse {flex-direction: column-reverse;}
+    .flex-row.responsive > * {flex-basis: unset;}
+    .flex-row.responsive.reverse {flex-direction: column-reverse;}
+}
+
+/* Common styling */
+
+
+.primary-title{
+    font-size: 80px;
+}
+.secondary-title{
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.left-center{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.center-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-center{
+    text-align: center;
+}
+
+.shop-now-btn{
+    display: inline-block;
+    padding: 13px 17px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #000;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header Styling */
+
+.header{
+    padding: 20px 0;
+}
+.header .logo{
+    width: 60%;
+}
+.header .menu{
+    width: 30%;
+}
+.header ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+.header .menu ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Banner Styling */
+
+.banner{
+
+}
+.banner img{
+    max-width: 100%;
+}
+
+/* Collection */
+
+.collection{
+    padding:70px 0;
+}
+.collection .products{
+    margin-top: 45px;
+}
+.collection .product img{
+    width: 100%;
+    height: 500px;
+}
+.collection .product .product-name{
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.collection .product .product-price{
+    font-size: 20px;
+    margin:15px 0;
+}
+.collection .product .shop-now-btn{
+    margin-top:0px
+}
+
+/* Second Banner */
+.second-banner{
+    padding: 70px 0;
+}
+.second-banner p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* featured-category */
+
+.featured-category{
+    padding: 70px 0;
+}
+.featured-category .categories{
+    margin-top: 40px;
+}
+.featured-category .categories .category{
+    margin: 15px;
+}
+.featured-category .categories .category img{
+    height: 300px;
+}
+.featured-category .category .category-name{
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+/* footer */
+
+.footer{
+    background-color: #f5f5f5;
+    padding: 70px 0 30px;
+}
+
+.footer .f-column p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.footer .link-title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.footer .s-column   {
+    padding-left:100px;
+}
+
+.footer .th-column{
+    padding-right: 200px;
+}
+
+.footer .links a{
+    display: block;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+}
+.footer .bottom-footer{
+    padding-top:30px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(33,33,33,0.1);
+}
+
+.footer .bottom-footer .socials-icons > a{
+    display: block;
+    padding: 5px;
+    margin-left: 10px;
+}
+.footer .bottom-footer .socials-icons a svg{
+    width: 20px;
+}
